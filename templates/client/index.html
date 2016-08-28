@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Films</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="body">
+<header class="header">
+    <div class="wrapper">
+        <a class="header-title" href="/">All Films</a>
+        <form id="search" class="header-search">
+            <input class="header-search-text_form" type="text" placeholder="Search..." name="search">
+        </form>
+    </div>
+</header>
+
+<div class="content">
+    <div class="wrapper">
+        <div class="main clearfix">
+
+            <table class="tableFilms">
+                <tbody id="tableFilms">
+                    <tr>
+                        <td class="tableFilms-cells">Title</td>
+                        <td class="tableFilms-cells">Release</td>
+                        <td class="tableFilms-cells">Format</td>
+                        <td class="tableFilms-cells">Stars</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form class="add_films_form" id="addFilmForm">
+                <input class="add_films_form-title" type="text" name="Title" placeholder="Title..." required>
+                <input class="add_films_form-release" type="text" name="Release" placeholder="Release" pattern="[0-9]{4}" required>
+
+                <select class="add_films_form-format" name="Format" size="1" required>
+                    <option value="DVD">DVD</option>
+                    <option value="VHS">VHS</option>
+                    <option value="Blu-Ray">Blu-Ray</option>
+                </select>
+
+                <input class="add_films_form-stars" type="text" name="Stars" placeholder="Stars..." required>
+
+                <button class="add_films_form-submit" type="submit">Add to list</button>
+            </form>
+            <form id="upload" class="add_films_from_file">
+                <input class="add_films_from_file-upload" type="file" name="upload" accept="text/plain">
+                <input class="add_films_from_file-submit" type="submit" value="Upload file" />
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="wrapper">
+        Test © 2016
+    </div>
+</footer>
+<script src="js/scripts.js" async></script>
+</body>
+</html>

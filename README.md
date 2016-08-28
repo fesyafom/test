@@ -1,13 +1,16 @@
-Test
-
-Install
-
-    install node.js version 5.9.1 or less
-    install mongoDB version 3.2 or less
-    in console write npm install
-    in file /config/config.json specify Web-Server port, and settings to connect to mongoDB. 
-    In root folder write npm start for start http server
-    Open in browser link http://localhost:3001 (if used default settings).
+<h2>Requirements:</h2>
+<ul>
+	<li>node.js version 5.9.1 or less</li>
+	<li>mongoDB varsion 3.2 or less</li>
+</ul>
+<h2>Install:</h2>
+<ul>
+	<li>In console write <b>npm install</b></li>
+	<li>In file <b>/config/config.json</b> specify Web-Server port, and settings to connect to mongoDB</li>
+	<li>In root folder write <b>npm start</b> for start http server</li>
+	<li>Open in browser link <b>http://localhost:3001</b> (if used default settings)</li>
+</ul>
+	
     
 
 
